@@ -92,8 +92,8 @@ h2 {
 /*** HEADER SECTION ****/
 
 header {
-	background-image:-webkit-linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)),url(img/header-img-min.jpg);
-	background-image:linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)),url(img/header-img-min.jpg);
+	background-image:-webkit-linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)),url(img/header-img.jpg);
+	background-image:linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)),url(img/header-img.jpg);
 	height:100vh;
 	background-size:cover;
 	background-position:center;
@@ -104,8 +104,7 @@ header {
 	position:absolute;
 	top:50%;
 	left:50%;
-	-webkit-transform:translate(-50%,-50%);
-	        transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
 	text-align:center;
 }
 
@@ -136,7 +135,6 @@ header {
 .main-nav li a:visited {
 	text-decoration: none;
 	color:#fff;
-	-webkit-transition:border-bottom 0.2s;
 	transition: border-bottom 0.2s;
 }
 
@@ -264,17 +262,12 @@ header {
 	width:100%;
 	height:auto;
 	opacity:.7;
-	-webkit-transform:scale(1.15);
-	        transform:scale(1.15);
-	-webkit-transition:opacity 0.5s, -webkit-transform 0.5s;
-	transition:opacity 0.5s, -webkit-transform 0.5s;
+	transform:scale(1.15);
 	transition:transform 0.5s, opacity 0.5s;
-	transition:transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .portfolio-image img:hover {
-	-webkit-transform:scale(1);
-	        transform:scale(1);
+	transform:scale(1);
 	opacity:1;
 }
 
@@ -332,7 +325,6 @@ header {
 /******** TESTIMONIALS SECTION ******/
 
 .testimonials-section {
-	background-image:-webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)),url(img/testimonial-background.jpg);
 	background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)),url(img/testimonial-background.jpg);
 	background-size:cover;
 	background-attachment:fixed;
@@ -538,7 +530,6 @@ footer {
 .social-links li a:visited {
 	color:#888;
 	text-decoration: none;
-	-webkit-transition:color 0.2s;
 	transition:color 0.2s;
 }
 
@@ -562,7 +553,6 @@ footer {
 .fa-twitter,
 .fa-google-plus-g,
 .fa-instagram {
-	-webkit-transition:color 0.2s;
 	transition:color 0.2s;
 }
 
@@ -588,17 +578,18 @@ footer p {
 	line-height:1.5;
 }
 
-/****  JQUERY ANIMATE ON SCROLL ****/
-
-.js--about-box {
-	opacity:0;
-	animation-duration:1s;
+/**** Jquery Animate on Scroll***/
+.js--about-box{
+	opacity: 0;
+	animation-duration: 2s;
 }
-
-.js--about-box.animate__animated {
-	opacity:1;
+.js--about-box.animate__animated{
+	opacity: 1;
 }
-
-.js--service-box {
-	animation-duration:1.5s;
+.js--service-box{
+	opacity: 0;
+	animation-duration: 3s;
+}
+.js--service-box.animate__animated{
+	opacity: 1;
 }
